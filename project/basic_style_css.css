@@ -83,7 +83,7 @@ h1 {
 }
 
 /*animation effect*/
-@keyframe race {
+@keyframes race {
     0%, 100%{
         transform: translateY(0px);
         background-image: url("./images/icon_2.png");
