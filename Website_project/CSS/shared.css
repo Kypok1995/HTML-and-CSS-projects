@@ -132,7 +132,7 @@ section{
 }
 
 /*HOME SECTIONS STYLING*/
-#home{
+#home {
     background: url("../Images/thumb/background.jpg") no-repeat;
     background-attachment: fixed;
     -webkit-background-size: cover;
