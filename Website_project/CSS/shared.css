@@ -2,6 +2,7 @@ html {
     font-family: sans-serif;
     font-size: 62.5%;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;  /* for mobile browsers*/
 }
 
@@ -138,7 +139,7 @@ section{
 
 /*HOME SECTIONS STYLING*/
 #home {
-    background: url("../Images/thumb/background.jpg") no-repeat;
+    background: url("../Images/thumb/background.jpg") no-repeat 50% 50%;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
