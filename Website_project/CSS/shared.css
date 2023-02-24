@@ -238,3 +238,18 @@ section{
     word-spacing: 3pt;
 }
 
+.feedback p{
+    color: #13161b;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.feedback form{
+    font-size: 15pt;
+    outline: none;
+    font-weight: 600;
+    color: #8d8e8f;
+    padding: 12px 12px;
+    width: 70%;
+    
+}
