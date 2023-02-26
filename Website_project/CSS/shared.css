@@ -139,7 +139,7 @@ section{
 
 /*HOME SECTIONS STYLING*/
 #home {
-    background: url("../Images/thumb/planets.jpg") no-repeat 50% 50%;
+    background: url("../Images/thumb/background.jpg") no-repeat 50% 50%;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
