@@ -3,6 +3,9 @@ body {
     font-size: 15px;
 }
 
+#contact {
+    background-color: #d9e97c;
+}
 .feedback{
     width: 60%;
     padding: 10px;
@@ -54,6 +57,10 @@ body {
     background: rgb(227,222,222);
     box-shadow: 2px 3px 3px 0px rgba(0,0,0,0.3);
     font-family: "Raleway", sans-serif;
+}
+
+.form-spacer{
+    padding: 30px 39px;
 }
 
 .feedback input[type="text"]{
