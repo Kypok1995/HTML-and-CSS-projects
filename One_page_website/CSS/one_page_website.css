@@ -3,8 +3,8 @@ body {
     font-size: 15px;
 }
 
-#contact {
-    background-color: #dfb84e;
+/*#contact {
+    background-color: #dfb84e;*/
 }
 .feedback{
     width: 60%;
@@ -20,7 +20,7 @@ body {
     text-align: center;
     margin: 0 auto;
     color: #13161b;
-    font-weight: 300;
+    font-weight: 600;
     font-size: 20px;
     letter-spacing: 0pt;
     word-spacing: 0pt;
@@ -31,8 +31,8 @@ body {
     text-align: center;
     margin: 0 auto;
     color: #13161b;
-    font-weight: 500;
-    font-size: 15px;
+    font-weight: 600;
+    font-size:30px;
     font-variant: small-caps;
     letter-spacing: 4pt;
     word-spacing: 3pt;
