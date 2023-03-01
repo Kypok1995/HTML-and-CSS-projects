@@ -92,9 +92,16 @@ footer{
     float: left;
     width: 50%;
     flex: 50%;
+    border: 2px solid black;
 }
 
 .row{
     display: flex;
 }
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
