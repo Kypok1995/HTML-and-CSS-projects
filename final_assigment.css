@@ -108,3 +108,13 @@ footer{
     clear: both;
   }
 
+  p{
+    color:#48e419;
+    font-size: medium;
+  }
+
+  p:hover{
+    color: rgb(30, 102, 236);
+    font-size: large;
+  }
+
