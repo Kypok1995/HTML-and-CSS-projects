@@ -1,0 +1,63 @@
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+img{
+    filter: contrast(110%);
+    border-radius: 10px;
+}
+
+footer{
+    text-align: center;
+    font-weight: bold;
+}
+
+.table{
+    border: 2px solid red;
+    padding: 10px;
+
+}
+
+.top-row{
+    background-color: blue;
+}
+
+.container{
+    position: relative;
+    text-align: center;
+    color: red;
+}
+
+.bottom-left{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.bottom-right{
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.top-left{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.top-right{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
