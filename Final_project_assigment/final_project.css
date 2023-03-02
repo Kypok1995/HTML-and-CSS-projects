@@ -88,3 +88,148 @@ img:hover{
         margin-top: 150px;
     }
 }
+
+/*footer styling*/
+footer{
+    padding: 2%;
+    background-color: whitesmoke;
+}
+
+/*End of general styling*/
+
+/*Navbar styling*/
+
+.navbar{
+    overflow: hidden;/*nothing can be on the top of navbar*/
+    background-color: greenyellow;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    -webkit-animation: moveNav 5s;
+    animation: moveNav 5s;
+}
+/*for animation effect on the navbar*/
+@keyframes moveNav {
+    from{left: -100vw;}
+    to{left: 0vw;}
+}
+
+.navbar a{
+    float: left;
+    display: block;
+    color: whitesmoke;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    -webkit-animation: moveNavText 5.75s;
+    animation: moveNavText 5.75s;
+}
+
+@keyframes moveNavText {
+    from{top: -100vw;}
+    to {top: 0vw;}
+}
+
+/* for smaller navbar links on small display devices*/
+@media  screen and (max-width: 576px) {
+    .navbar a{
+        width: 25%;
+        font-size: 12px;
+    }
+}
+
+/*Navbar hover styling*/
+
+.navbar a:hover{
+    background-color: antiquewhite;
+    color: black;
+    font-weight: bold;
+}
+
+/*navbar home buttom*/
+
+.navbar a.active{
+    background-color: darkgray;
+}
+
+/*Video styling*/
+
+#Hacker_video {
+    position: fixed;
+    right: 0; /*no space on the right a bottom*/
+    bottom: 0;
+    max-width: 100%;
+    z-index: -1; /* to place video behind all elements*/
+}
+
+@media  screen and (max-width: 576px) {
+    #Hacker_video{
+        display: none;
+    }
+}
+
+/*for styling text on the video*/
+.Video_text {
+    background: rgba(0,0,0,0.5);
+    color: whitesmoke;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    -webkit-animation: moveVideoText 5.75s;
+    animation: moveVideoText 5.75s;
+}
+
+@keyframes moveVideoText {
+    from{top: -100vw;}
+    to{top: 0vw;}
+}
+/* end of video styling*/
+
+* { /*this is unversal selector for all elements*/
+    box-sizing: border-box; 
+}
+
+/*Columns styling*/
+.Column_1{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 3%;
+    height: 400px;
+    background-color: whitesmoke;
+}
+
+@media  screen and (max-width: 576px) {
+    .Column_1{
+        overflow: auto;
+    }
+}
+
+.Column_2{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 3%;
+    height: 400px;
+    background-color: grey;
+}
+
+.Column_tall{
+    padding-top: 3.5%;
+    height: 450px;
+}
+
+.row:after{
+    content: "";/* By leaving this blank, we are allowing the footer (covered lower down) to be displayed - removing it makes the footer overwrite a column */
+    display: table;
+    clear: both;/* This clears any other elements from floating on the left or the right of an element */
+}
+
+/*END OF TABLE STYLING*/
+
+/*Contact form styling*/
+
