@@ -162,7 +162,8 @@ footer{
     position: fixed;
     right: 0; /*no space on the right a bottom*/
     bottom: 0;
-    max-width: 100%;
+    left: 0;
+    max-width: 150%;
     z-index: -1; /* to place video behind all elements*/
 }
 
@@ -215,7 +216,7 @@ footer{
     padding: 10px;
     padding-top: 3%;
     height: 400px;
-    background-color: grey;
+    background-color: darkolivegreen;
 }
 
 .Column_tall{
@@ -249,7 +250,7 @@ input[type=text]:hover{
     box-shadow: 0 0 px #00004d inset;/* to create a shadow than box are hovered*/
 }
 
-.form_text{
+input[type="text"]{
     background-color: black;
     color: whitesmoke;
     font-weight: bold;
@@ -263,10 +264,10 @@ input[type=text]:hover{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.form_text:hover{
+input[type="text"]:hover{
     background-color: whitesmoke;
     color: black;
-    transform: scale(1.5);
+    transform: scale(1.05);
     transition: transform 1.5s;
 }
 
