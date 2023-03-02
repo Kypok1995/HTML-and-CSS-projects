@@ -249,7 +249,7 @@ input[type=text]:hover{
     box-shadow: 0 0 px #00004d inset;/* to create a shadow than box are hovered*/
 }
 
-input[type=submit]{
+.form_text{
     background-color: black;
     color: whitesmoke;
     font-weight: bold;
@@ -263,7 +263,7 @@ input[type=submit]{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-input[type=submit]:hover{
+.form_text:hover{
     background-color: whitesmoke;
     color: black;
     transform: scale(1.5);
