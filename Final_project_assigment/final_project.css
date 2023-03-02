@@ -239,7 +239,7 @@ footer{
 
 /*Contact form styling*/
 
-input[type=text]{
+input[type="text"]{
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -251,11 +251,11 @@ input[type=text]{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-input[type=text]:hover{
+input[type="text"]:hover{
     box-shadow: 0 0 px #00004d inset;/* to create a shadow than box are hovered*/
 }
 
-input[type="text"]{
+input[type="submit"]{
     background-color: black;
     color: whitesmoke;
     font-weight: bold;
@@ -269,11 +269,8 @@ input[type="text"]{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-input[type="text"]:hover{
-    background-color: whitesmoke;
+input[type="submit"]:hover{
     color: black;
-    transform: scale(1.05);
-    transition: transform 1.5s;
 }
 
 form{
