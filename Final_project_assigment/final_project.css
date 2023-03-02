@@ -73,11 +73,12 @@ img{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding: auto;
 }
 
 img:hover{
     filter: brightness(100%);
-    transition: transform 1.2s;
+    transition: transform 1.5s;
     transform: scale(1.15);
 }
 
