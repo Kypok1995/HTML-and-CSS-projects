@@ -36,7 +36,7 @@ p{
 
 p:hover{
     transition: transform 1s;
-    transform: scale(1.15);
+    transform: scale(1.03);
 }
 
 /*End of paragraph styling*/
@@ -48,7 +48,7 @@ p:hover{
 
 .center:hover{
     transition: transform 1.5s;
-    transform: scale(1.15);
+    transform: scale(1.03);
 }
 /* end of center text styling*/
 
