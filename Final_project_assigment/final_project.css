@@ -101,7 +101,7 @@ footer{
 
 .navbar{
     overflow: hidden;/*nothing can be on the top of navbar*/
-    background-color: greenyellow;
+    background-color: black;
     position: fixed;
     top: 0;
     width: 100%;
