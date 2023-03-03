@@ -1,5 +1,25 @@
 # HTML-and-CSS-projects
-This repository includes all projects I'll make during HTML and CSS course at Tech Academy
+This repository includes all projects I'll make during HTML and CSS course at Tech Academy.
+
+<div>
+<h1> Projects</h1>
+<div>
+<li> <a href="https://github.com/Kypok1995/HTML-and-CSS-projects/tree/main/bootstrap4_project" target="new"> Cinema website </a> </li>
+<p> One-page website, styled using Bootstrap 4. It contain many Bootstrap features like: jumbotron, cards, forms and automatic sized columns.</p>
+</div>
+
+<div>
+<li> <a href="https://github.com/Kypok1995/HTML-and-CSS-projects/tree/main/Website_project" target="new"> RPG station website </a> </li>
+<p> Website, related to RPG games. Made using HTML and styled with CSS. Contained navbar, feedback form and a gallery with interactive images. </p>
+</div>
+
+<div>
+<li> <a href="https://github.com/Kypok1995/HTML-and-CSS-projects/tree/main/Final_project_assigment" target="new"> Portfolio website </a> </li>
+<p> Portfolio website with links to my GitHub, some actual information about me and advanced CSS animations. </p>
+</div>
+</div>
+
+
 
 <div id="header" align="center">
   <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="200"/>
