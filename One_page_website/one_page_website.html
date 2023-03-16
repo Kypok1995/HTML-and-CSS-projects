@@ -4,19 +4,11 @@
     <title> Akita funpage </title> 
     <meta charset="utf-8">
 <link rel="stylesheet" href="../One_page_website/CSS/one_page_website.css">
-  </head>
+	<script src="./JS/one_page_website.js" defer></script>
+</head>
   <body> 
  
- <!-- Background style-->
-<style> 
-body {
-  background-image: url('https://images.unsplash.com/photo-1586521532926-7db207e5b019?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80');
-  background-color: #cccccc;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-}
-</style>
+
  
  <!-- End of background style-->
   
@@ -47,86 +39,93 @@ body {
 	<!-- END HOME -->
 	
 	<!-- GALLERY -->
-	<section>
+	
 		<div id="gallery">
 		<h1> GALLERY </h1>
 		 <p> Here you can see several photos of cute Akitas</p>
-		<div>
-		<section> </section>
-			<!-- PHOTO 1 CONTAINER -->
-			<div>
-				<div>
-					<p> Akitas is one of cuties breed ever <p>
-					<img src="./Images/Akita_1.jpg" alt = "Sorry, image is not visiable" width="300" height="300" onclick="imgEnlarge(this)" onclick="imgAssign()" />
-					<div>
-						<h3> Click to Enlarge </h3>
-					</div>
-				</div>
-			</div>
-			<br /><br /><br /> <br> </br>
-			<!-- END PHOTO 1 CONTAINER -->
-			
-			<!-- PHOTO 2 CONTAINER -->
-			<div>
-				<div>
-					<p> Here you can see different Akita's types <p>
-					<img src="./Images/Akita_2.jpg" alt = "Sorry, image is not visiable" width="300" height="300" onclick="imgEnlarge(this)" onclick="imgAssign()"/>
-					<div>
-						<h3> Click to Enlarge </h3>
-					</div>
-				</div>
-			</div>
-			<br /><br /><br /> <br> </br>
-			<!-- END PHOTO 2 CONTAINER -->
-			
-			<!-- PHOTO 3 CONTAINER -->
-			<div>
-				<div>
-					<p> Also different Akitas can have different colors. <p>
-					<img src="./Images/Akita_3.jpg" alt = "Sorry, image is not visiable" width="300" height="300" onclick="imgEnlarge(this)" onclick="imgAssign()"/>
-					<div>
-						<h3> Click to Enlarge </h3>
-					</div>
-				</div>
-			</div>
-			<br /><br /><br /> <br> </br>
-			<!-- END PHOTO 3 CONTAINER -->
-			
-			<!-- PHOTO 4 CONTAINER -->
-			<div>
-				<div>
-					<p> Another very simular Japanese breed is Shibainu. <p>
-					<img src="./Images/Akita_4.jpg" alt = "Sorry, image is not visiable" width="300" height="300" onclick="imgEnlarge(this)" onclick="imgAssign()"/>
-					<div>
-						<h3> Click to Enlarge </h3>
-					</div>
-				</div>
-			</div>
-			<br /><br /><br /> <br> </br>
-			<!-- END PHOTO 4 CONTAINER -->
-			
-			<!-- PHOTO 5 CONTAINER -->
-			<div>
-				<div>
-					<p> In famoust movie "Hatico" you can also see Akita dog <p>
-					<img src="./Images/Akita_5.jpg" alt = "Sorry, image is not visiable" width="300" height="300" onclick="imgEnlarge(this)" onclick="imgAssign()"/>
-					<div>
-						<h3> Click to Enlarge </h3>
-					</div>
-				</div>
-			</div>
-			<!-- END PHOTO 5 CONTAINER -->
-			
-   <style type="text/css">
-        img{
-            width:300px;
-        }
-    </style>
- 
- <script src = "Enlarge_script.js" type="text/javascript">
- </script>
-	</section>
-	<hr>
+		</div>
+		
+
+<!-- Images used to open the lightbox -->
+<div class="row">
+	<div class="column">
+	  <img src="./Images/Akita_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="./Images/Akita_2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="./Images/Akita_3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="./Images/Akita_4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	</div>
+	<div class="column">
+		<img src="./Images/Akita_5.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	  </div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+  
+	  <div class="mySlides">
+		<div class="numbertext">1 / 5</div>
+		<img src="./Images/Akita_1.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">2 / 5</div>
+		<img src="./Images/Akita_2.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">3 / 5</div>
+		<img src="./Images/Akita_3.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">4 / 5</div>
+		<img src=".//Images/Akita_4.jpg" style="width:100%">
+	  </div>
+
+	  <div class="mySlides">
+		<div class="numbertext">5 / 5</div>
+		<img src="./Images/Akita_5.jpg" style="width:100%">
+	  </div>
+  
+	  <!-- Next/previous controls -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+	  <!-- Caption text -->
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+  
+	  <!-- Thumbnail image controls -->
+	  <div class="column">
+		<img class="demo" src="./Images/Akita_1.jpg" onclick="currentSlide(1)" alt="Puppy Akita">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./Images/Akita_2.jpg" onclick="currentSlide(2)" alt="Types of Akita breeds">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./Images/Akita_3.jpg" onclick="currentSlide(3)" alt="Types of Akita's colors">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./Images/Akita_4.jpg" onclick="currentSlide(4)" alt="Difference between Akita and Shiba">
+	  </div>
+
+	  <div class="column">
+		<img class="demo" src="./Images/Akita_5.jpg" onclick="currentSlide(5)" alt="Akita in the movie Hatico">
+	  </div>
+	</div>
+  </div>
 <!-- END OF GALLERY-->
 
 <!-- RSVP -->
