@@ -139,7 +139,9 @@
                     <div class="form-group">
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
-                    <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Dismissible popover" data-bs-content="And here's some amazing content. It's very engaging. Right?">Submit</a>
+                    <button type="button" class="btn btn-secondary " data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                      Submit
+                    </button>
                 </form>
             </div>
 
@@ -172,9 +174,6 @@
   
   
   <script>
-    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
-    
     const popover = new bootstrap.Popover('.popover-dismiss', { // to make a popover for the buttom
     trigger: 'focus'
     })
