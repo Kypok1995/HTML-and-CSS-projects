@@ -177,8 +177,8 @@
     const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
     const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
     
-    const popover = new bootstrap.Popover('.popover-dismiss', { // to make a popover for the buttom
-    trigger: 'focus'
+    $('.popover-dismiss').popover({
+      trigger: 'focus'
     })
   </script>
 
