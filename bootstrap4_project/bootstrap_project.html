@@ -127,7 +127,9 @@
                 <h1 class="display-4 hidden-sm-down" style="color: #fff; font-family: roboto; font-weight: 900; text-transform: uppercase;"> Movie Deals!</h1>
                 <p class="lead"> Check out our monthly deals!</p>
                 <!--movie deals-->
-                <button type="button" class="btn btn-outline-primary" data-toggle="model" data-target="#register"> See our monthly deals here</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#register">
+                  See our monthly movie deals
+                </button>
               </div>
             </div>
             <!-- jumbotron heading-->
@@ -139,14 +141,52 @@
                     <div class="form-group">
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
-                    <button type="button" class="btn btn-secondary btn-info popover-dismiss" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                    <button type="button"  class="btn btn-secondary btn-info popover-dismiss" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
                       Submit
                     </button>
                 </form>
             </div>
 
+            <!--modal start-->
+            <div class="modal fade" id="register" tabindex="-1" aria-labelledby="registerLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="registerLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    
+                    <!--form start-->
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+
+
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
             
-            
+            <!-- footer -->
             <div class="container my-5">
                 <ul class="nav nav-inline">
                     <li class="mav-item">
@@ -174,12 +214,14 @@
   
   
   <script>
-    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
-    
-    const popover = new bootstrap.Popover('.popover-dismiss', {
-        trigger: 'focus'
+     const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+     const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+     
+     const popover = new bootstrap.Popover('.popover-dismiss', {
+      trigger: 'focus'
       })
+
+     
   </script>
 
 
