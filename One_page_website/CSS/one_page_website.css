@@ -275,6 +275,12 @@ h1{
   bottom: 23px;
   right: 28px;
   width: 280px;
+  animation: myMove,  1s ;
+}
+
+@keyframes myMove {
+  from{scale: 1;}
+  to{scale: 1.2;}
 }
 
 /* The popup form - hidden by default */
@@ -330,3 +336,4 @@ h1{
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
+
