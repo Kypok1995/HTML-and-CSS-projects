@@ -278,7 +278,8 @@ h1{
 }
 
 .open-button:hover{
-  animation: myMove,  1s ;
+  animation-name: myMove;
+  animation-duration: 1.5s;
 }
 
 @keyframes myMove {
