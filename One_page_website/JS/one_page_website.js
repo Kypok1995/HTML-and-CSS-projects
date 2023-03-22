@@ -44,10 +44,3 @@ window.addEventListener('DOMContentLoaded', () => {
   document.body.classList.remove('fade-out');
 });
 
-function validateForm() {
-  let x = document.forms["myForm"]["rspv"].value;
-  if (x == "") {
-    alert("All form fields must be filled out!");
-    return false;
-  }
-}
