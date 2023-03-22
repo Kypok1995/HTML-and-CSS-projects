@@ -275,6 +275,9 @@ h1{
   bottom: 23px;
   right: 28px;
   width: 280px;
+}
+
+.open-button:hover{
   animation: myMove,  1s ;
 }
 
