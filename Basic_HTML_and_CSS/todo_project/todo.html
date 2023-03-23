@@ -8,6 +8,7 @@
 </head>
   <body> 
 
+    <p id="JStest"></p>
     <p id="JSONtest2"></p>
     <p id="JSONtest"></p>
     <p id="entry"> Please input your todo things!</p>
@@ -26,6 +27,10 @@
     var JSbreed = '{"name":"Bilbo", "age": "101", "color":"white"}';
     var breed = JSON.parse(JSbreed);
     document.getElementById('JSONtest2').innerHTML = breed.age + breed.name;
+
+    localStorage.setItem('Name', 'Andrei');
+    document.getElementById('JStext').innerHTML=localStorage.getItem('Name');
+
 
 </script>
 
