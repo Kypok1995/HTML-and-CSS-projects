@@ -30,12 +30,7 @@ function show(){ // function to show tasks pernamentely at display
     document.getElementById('todos').innerHTML = html;
 }
 
-function delete(){
-    document.getElementById('remove').addEventListener('click', delete);
-    if (todos[i] !== null){
-        todos.remove[i];
-    }
-}
+
 
 // This displays inputed task than Add button is clicked
 document.getElementById('add').addEventListener('click', add);
