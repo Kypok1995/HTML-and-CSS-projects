@@ -16,12 +16,13 @@ input{
     padding-top: 30px;
     width: 500px;
     height: 60px;
-    font-size: 40px;
+    font-size: 30px;
     border: 1px solid black;
 }
 
 input:focus{
     outline: none;
+    border: 1px solid black;
 }
 
 li{
