@@ -8,6 +8,7 @@
 </head>
   <body> 
 
+    <p id="JSONtest"></p>
     <p id="entry"> Please input your todo things!</p>
     <input id="task"><button id="add">Add item</button>
     <hr>
@@ -15,6 +16,12 @@
 
     <script src="./JS/todo.js"></script>
 </body>
+
+<script>
+    var Dog = {name: "Pluto", breed:"Colly", color:"brown"};
+    var JSONstring = JSON.stringify(Dog);
+    document.getElementById('JSONtest').innerHTML=JSONstring;
+</script>
 
 <footer> This website is created by Andrei Trubitsyn.
     <a href="https://github.com/Kypok1995" target="new"> Check out my GitHub </a>
