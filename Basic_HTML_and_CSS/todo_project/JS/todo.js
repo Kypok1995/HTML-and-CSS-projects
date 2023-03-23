@@ -24,10 +24,17 @@ function show(){ // function to show tasks pernamentely at display
 
     for (var i=0; i<todos.length; i++){
         // display a task in list and create an X button
-        html += '<li>' + todos[i] + '<button class="remove" id=""' + i + '">x</button></li>';
+        html += '<li>' + todos[i] + '<button class="remove" id="i" onclick = "delete()" " + i + '">x</button></li>';
     };
     html+='</ul>'//end a list
     document.getElementById('todos').innerHTML = html;
+}
+
+function delete(){
+    document.getElementById('i').addEventListener('click', delete);
+    if (todos[i] !== null){
+        todos.remove[i];
+    }
 }
 
 // This displays inputed task than Add button is clicked
