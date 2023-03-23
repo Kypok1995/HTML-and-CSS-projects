@@ -8,6 +8,7 @@
 </head>
   <body> 
 
+    <p id="JSONtest2"></p>
     <p id="JSONtest"></p>
     <p id="entry"> Please input your todo things!</p>
     <input id="task"><button id="add">Add item</button>
@@ -21,6 +22,11 @@
     var Dog = {name: "Pluto", breed:"Colly", color:"brown"};
     var JSONstring = JSON.stringify(Dog);
     document.getElementById('JSONtest').innerHTML=JSONstring;
+
+    var JSbreed = '{"name":"Bilbo", "age": "101", "color":"white"}';
+    var breed = JSON.parse(JSbreed);
+    document.getElementById('JSONtest2').innerHTML = breed.age + breed.name;
+
 </script>
 
 <footer> This website is created by Andrei Trubitsyn.
