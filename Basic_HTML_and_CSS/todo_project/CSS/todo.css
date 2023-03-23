@@ -26,3 +26,17 @@ li{
     list-style: none;
     margin: 0;
 }
+
+footer{
+    border: 1px solid black;
+}
+
+footer:hover{
+    animation-name: scale;
+    animation-duration: 1s;
+}
+
+@keyframes scale {
+    from{scale: 1;}
+    to{scale: 1.1;}
+}
