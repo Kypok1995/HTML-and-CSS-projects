@@ -16,12 +16,13 @@
     <div class="navbar">
         <a class="active" href="#Home">Home</a>
         <a href="#About"> About</a>
+        <a href="#Slideshow">Slideshow</a>
         <a href="#GitHub">GitHub</a>
-        <a href="#Contact">Contact</a>
+        <a onclick="openForm()" ondblclick="closeForm()" class="contact"> Contact</a>
     </div>
     <!--End of Navbar-->
     <br>
-    <br> <!--Cuople brakes to put a spacing between navbar and rest of the site-->
+    <br> <!--Couple brakes to put a spacing between navbar and rest of the site-->
     
     <!--Background video-->
     <div id="#Home">
@@ -46,6 +47,57 @@
     </div>
     <!--End of video section-->
 
+    <!-- Slideshow ssection added-->
+    <div id="Slideshow">
+        <div id="slideshow_background">
+            <div id="slideshow_container">
+                <!--slide 1 of 6-->
+                <div class="mySlides">
+                    <img class="slideshow_img" src="" alt="This is my picture">
+                    <div class="text"> I'll be happy to help you with your projects</div>
+                </div>
+                <!--slide 2 of 6-->
+                <div class="mySlides">
+                    <img class="slideshow_img" src="" alt="This is my picture">
+                    <div class="text"> I am a game developed trained in HTML / CSS / JavaScript</div>
+                </div>
+                <!--slide 3 of 6-->
+                <div class="mySlides">
+                    <img class="slideshow_img" src="" alt="This is my picture">
+                    <div class="text"> Python, </div>
+                </div>
+                <!--slide 4 of 6-->
+                <div class="mySlides">
+                    <img class="slideshow_img" src="" alt="This is my picture">
+                    <div class="text"> C#, NET Framework, MVC </a> </div>
+                </div>
+                 <!--slide 5 of 6-->
+                 <div class="mySlides">
+                    <img class="slideshow_img" src="" alt="This is my picture">
+                    <div class="text"> C++ </div>
+                </div>
+                <!--slide 6 of 6-->
+                <div class="mySlides">
+                    <img class="slideshow_img" src="" alt="This is my picture">
+                    <div class="text"> <a class="white-text contact" onclick="openForm()"> Contact me now! </a> </div>
+                </div>
+                <!--previous and next buttons-->
+                <a class="previous" onclick="plusSlides(-1)">&#10094</a>
+                <a class="next" onclick="plusSlides(1)">&#10095</a>
+            </div>
+            <br>
+            <!--slideshow dots-->
+            <div style="text-align: center;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+        </div>
+    </div>
+
     <!--About section-->
     <div class="row" id="#About">
         <!--left column-->
@@ -58,7 +110,7 @@
             <p>
                 I am currently study game development at Tech Academy. I am looking forward to start working as game developer.
                 <br>
-                <br>I will be a graduate of <a href="https://www.learncodinganywhere.com" target="new">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. 
+                <br>I will be a graduate of <a href="https://www.learncodinganywhere.com" target="new">The Tech Academy</a>'s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. 
                 <br>
                 <br> If you have any relative job opportunity in game development sphere, I would like to discuss it.<a href="#Contact">Contact</a>
             </p>
