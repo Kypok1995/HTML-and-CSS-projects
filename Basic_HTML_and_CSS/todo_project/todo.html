@@ -8,31 +8,16 @@
 </head>
   <body> 
 
-    <p id="JStest"></p>
-    <p id="JSONtest2"></p>
-    <p id="JSONtest"></p>
+   
     <p id="entry"> Please input your todo things!</p>
     <input id="task"><button id="add">Add item</button>
     <hr>
     <div id="todos"></div>
 
-    <script src="./JS/todo.js"></script>
+    <script src="./JS/todo.js" defer></script>
 </body>
 
-<script>
-    var Dog = {name: "Pluto", breed:"Colly", color:"brown"};
-    var JSONstring = JSON.stringify(Dog);
-    document.getElementById('JSONtest').innerHTML=JSONstring;
 
-    var JSbreed = '{"name":"Bilbo", "age": "101", "color":"white"}';
-    var breed = JSON.parse(JSbreed);
-    document.getElementById('JSONtest2').innerHTML = breed.age + breed.name;
-
-    localStorage.setItem("Name", "Andrei");
-    document.getElementById('JStest').innerHTML=localStorage.getItem("Name");
-
-
-</script>
 
 <footer> This website is created by Andrei Trubitsyn.
     <a href="https://github.com/Kypok1995" target="new"> Check out my GitHub </a>
