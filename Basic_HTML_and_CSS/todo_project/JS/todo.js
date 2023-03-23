@@ -30,12 +30,12 @@ function show(){ // function to show tasks pernamentely at display
     document.getElementById('todos').innerHTML = html;
 
     var buttons = document.getElementsByClassName('remove');//to access button element
-    for (var i =0; i<buttons.length; i++){
-        buttons[i].addEventListener('click', delete)
+    for (var i =0; i < buttons.length; i++){
+        buttons[i].addEventListener('click', remove);
     }
 }
 
-function delete() {
+function remove () {
     var id = this.getAttribute('id'); //to find ID of current task and store at variable
     var todos = getTodo();
     todos.splice(id, 1); //to remove 1 item on the id position from array
