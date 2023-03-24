@@ -49,6 +49,7 @@ p{
     font-size: 1.5vw;
     padding-left: 1vw;
     padding-right: 1vw;
+    padding-top: 2vw;
 }
 
 p:hover{
@@ -72,6 +73,8 @@ p:hover{
 /*Anchor elements styling*/
 a{
     color: blue; /*all links are blue*/
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 /*quotation styling*/
@@ -94,7 +97,13 @@ img{
 }
 
 img:hover{
-    filter: grayscale(5%);
+    animation-name: imgAnim;
+    animation-duration: 1.5s;
+}
+
+@keyframes imgAnim {
+    from{filter: grayscale(75%);}
+    to{filter: grayscale(5%);}
 }
 
 /*Media rule is used to ensure accurate display on different types of devices*/
@@ -107,8 +116,9 @@ img:hover{
 
 /*footer styling*/
 footer{
-    background-color: whitesmoke;
+    background-color: #A0B57D;
     padding: 2%;
+    padding-top: 5vw;
 }
 
 /*End of general styling*/
@@ -198,7 +208,8 @@ footer{
     background: rgba(0,0,0,0.5);
     color: whitesmoke;
     width: 100%;
-    padding: 20px;
+    height: 100vw;
+    padding-top: 2vw;
     position: relative;
     -webkit-animation: moveVideoText 5.75s;
     animation: moveVideoText 5.75s;
@@ -355,47 +366,178 @@ footer{
 
 /*Contact form styling*/
 
-input[type="text"]{
+.Pop_up_button{
+    position: fixed;
+    bottom: 1.75vw;
+    right: 1.75vw;
+    width: 25vw;
+    background-color: whitesmoke;
+    color: black;
+    border: solid black;
+    cursor: pointer;
+    -webkit-animation: movePopup 5s;
+    animation: movePopup 5s;
+}
+
+@keyframes movePopup {
+    from{right: -40vw;}
+    to{right: 1.75vw;}
+}
+
+@-webkit-keyframes movePopup{
+    from{right: -40vw;}
+    to{right: 1.75vw;}
+}
+
+.form-popup{
+    z-index: 8;
+    display: none;
+    position: fixed;
+    bottom: 0.5vw;
+    right: 0.5vw;
+}
+
+.form-container{
+    max-width: 49vw;
+    padding: 1vw;
+    background-color: whitesmoke;
+}
+
+.form-container input[type=text]{
     width: 100%;
-    padding: 12px;
-    border: 1px solid #99B569;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
+    padding: 0.93vw;
+    margin: 0.6vw 0 0.6vw 0;
+    border: none;
+    background-color: #A0B57D;
+    font-size: 1vw;
+}
+
+button{
     font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.3vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+    padding: 1.5vw;
+    cursor: pointer;
+    width: 100%;
+    height: auto;
 }
 
-input[type="text"]:hover{
-    box-shadow: 0 0 px #00004d inset;/* to create a shadow than box are hovered*/
+button:hover,
+.form-container
+.btn:hover{
+    color: whitesmoke;
+    background-color: black;
+    transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+    border-color: silver;
 }
 
-input[type="submit"]{
+.form-container .btn{
+    background-color: whitesmoke;
+    color: black;
+    border-color: black;
+    margin-bottom: 1vw;
+}
+
+.form-container .cancel{
     background-color: black;
     color: whitesmoke;
-    font-weight: bold;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-color: gray;
 }
 
-input[type="submit"]:hover{
-    color: black;
+.form-container .cancel:hover{
     color: whitesmoke;
-    transition: transform 1.5s;
-    transform: scale(1.1);
+    background-color: darkgreen;
+    transition-duration: 1s;
+    -webkit-animation-duration: 1s;
+    border-color: black;
 }
 
-form{
-    border-radius: 5px;
-    background-color: #44502f;
-    padding: 25px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+@media screen and (max-width: 527px){
+    p {
+        font-size: 3.75vw;
+    }
+}
+
+@media screen and (min-width: 528px) and (max-width:660px){
+    p {
+        font-size: 3.5vw;
+    }
+}
+
+@media screen and (min-width: 661px) and (max-width:799px){
+    p {
+        font-size: 2.75vw;
+    }
+}
+
+@media screen and (max-width: 800px) and (max-width:924px){
+    p {
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 925px) and (max-width:1050px){
+    p {
+        font-size: 2.25vw;
+    }
+}
+
+@media screen and (max-width: 1051px) and (max-width:1310px){
+    p {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 1311px) and (max-width:1535px){
+    p {
+        font-size: 1.75vw;
+    }
+}
+
+@media screen and (max-width: 1536px) and (max-width:2269px){
+    p {
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width: 2270px){
+    p {
+        font-size: 1.35vw;
+    }
+}
+
+@media screen and (max-width:1080px) {
+    .navbar a{
+        width: 20%;
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width:1080px) {
+    .quote{
+        font-size: 3.5vw;
+    }
+
+    .white-text{
+        font-size: 4.5vw;
+    }
+}
+
+@media screen and (min-width: 1725px) {
+    .Column_1{
+        height: 550px;
+    }
+
+    .Column_2{
+        height: 550px;
+    }
+}
+
+@media screen and (min-width: 2000px){
+    h1{
+        margin-top: 0px;
+    }
 }
 

@@ -53,32 +53,32 @@
             <div id="slideshow_container">
                 <!--slide 1 of 6-->
                 <div class="mySlides fade">
-                    <img class="slideshow_img" src="" alt="This is my picture">
+                    <img class="slideshow_img" src="./Images/myself.jpg" alt="This is my picture">
                     <div class="text"> I'll be happy to help you with your projects</div>
                 </div>
                 <!--slide 2 of 6-->
                 <div class="mySlides fade">
-                    <img class="slideshow_img" src="" alt="This is my picture">
+                    <img class="slideshow_img" src="./Images/htmlcss.jpeg" alt="This is my picture">
                     <div class="text"> I am a game developed trained in HTML / CSS / JavaScript</div>
                 </div>
                 <!--slide 3 of 6-->
                 <div class="mySlides fade">
-                    <img class="slideshow_img" src="" alt="This is my picture">
+                    <img class="slideshow_img" src="./Images/python.png" alt="This is my picture">
                     <div class="text"> Python, </div>
                 </div>
                 <!--slide 4 of 6-->
                 <div class="mySlides fade">
-                    <img class="slideshow_img" src="" alt="This is my picture">
+                    <img class="slideshow_img" src="./Images/C#.jpg" alt="This is my picture">
                     <div class="text"> C#, NET Framework, MVC </a> </div>
                 </div>
                  <!--slide 5 of 6-->
                  <div class="mySlides fade">
-                    <img class="slideshow_img" src="" alt="This is my picture">
+                    <img class="slideshow_img" src="./Images/c++.png" alt="This is my picture">
                     <div class="text"> C++ </div>
                 </div>
                 <!--slide 6 of 6-->
                 <div class="mySlides fade">
-                    <img class="slideshow_img" src="" alt="This is my picture">
+                    <img class="slideshow_img" src="./Images/pexels-markus-winkler-4159962.jpg" alt="This is my picture">
                     <div class="text"> <a class="white-text contact" onclick="openForm()"> Contact me now! </a> </div>
                 </div>
                 <!--previous and next buttons-->
@@ -99,7 +99,7 @@
     </div>
 
     <!--About section-->
-    <div class="row" id="#About">
+    <div class="row" id="About">
         <!--left column-->
         <div class="Column_2">
             <img src="./Images/pexels-olia-danilevich-4974914.jpg" alt="Sorry your image is not loaded, please try to restart a webpage">
@@ -119,7 +119,7 @@
     <!--End of about section-->
 
     <!--GitHub Section-->
-    <div class="Row" id="#GitHub">
+    <div class="Row" id="GitHub">
         <!--left column-->
         <div class="Column_1">
             <h1>GitHub</h1>
@@ -137,26 +137,22 @@
     <!--End of GitHub Section-->
 
     <!-- Contact section-->
-    <div class="Row" id="#Contact">
-        <!--Contact image. left column-->
-        <div class="Column_2 Column_tall">
-            <img src="./Images/pexels-markus-winkler-4159962.jpg" alt="Contact image">
-        </div>
-        <!--Contact form, left column-->
-        <div class="Column_1 Column_tall">
-        <h1> Contact</h1>
-        <!-- Contact form fom fromspree.io-->
-            <form action="https://formspree.io/f/xoqzwwlg"  method="POST">
-                <label>
-                Your email:
-                <input type="text" name="email">
-                </label>
-                <label>
-                Your message:
-                <input type="text" textarea name="message"></textarea>
-                </label>
-                <!-- your other form fields go here -->
-                <input type ="submit" button type="submit"></button>
+    <div id="contact">
+        <button onclick="openForm()" class="Pop_up_button">CONTACT</button>
+        <div class="form-popup" id="myForm">
+            <form action="https://formspree.io/f/xoqzwwlg"  method="POST" class="form-container">
+                <h1> Contact </h1>
+                <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Type your name here" name="name" required>
+                <label for="phone"><b>Phone number</b></label>
+                <input type="text" placeholder="Type your phone number here" name="phone">
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Type your email here" name="email" required>
+                <label for="message"><b>Message</b></label>
+                <input type="text" placeholder="Type your message here" name="message" required>
+
+                <button type="submit" class="btn">SUBMIT</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
             </form>
         </div>
     </div>
@@ -166,9 +162,10 @@
     <!--Footer section-->
     <footer>
         <p>
-            <p class="center">&copy Andrei Trubitsyn., <a href="https://www.linkedin.com/in/%D0%B0%D0%BD%D0%B4%D1%80%D0%B5%D0%B9-%D1%82%D1%80%D1%83%D0%B1%D0%B8%D1%86%D1%8B%D0%BD-4abb31238/?locale=en_US" target="new"></a></p>
+            <p class="center">&copy Andrei Trubitsyn. <a href="https://www.linkedin.com/in/%D0%B0%D0%BD%D0%B4%D1%80%D0%B5%D0%B9-%D1%82%D1%80%D1%83%D0%B1%D0%B8%D1%86%D1%8B%D0%BD-4abb31238/?locale=en_US" target="new">LinkedIn</a></p>
             <br>
         </p>
     </footer>
+    <script src="./JS/final project.js" defer></script>
   </body>
 </html>
