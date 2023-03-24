@@ -6,7 +6,7 @@ body{
     margin: 0%; /*to ensure site displays alll the way to the edge of the screen*/
     opacity: 1;
     transition: 3s opacity;
-    letter-spacing: 2vw;
+    letter-spacing: 0.2vw;
     font-family: Avant Garde, Helvetica;
     font-size: 1.5vw;
     overflow-x: hidden; /*prevent horizontal bar from appearing than quote is hovered over*/
