@@ -83,7 +83,7 @@ q{
 /*Image styling*/
 
 img{
-    filter: brightness(50%);
+    filter: grayscale(50%);
     border-radius: 8px;
     max-width: 100%;
     height: 340px;
@@ -94,8 +94,7 @@ img{
 }
 
 img:hover{
-    filter: brightness(100%);
-    scale: 1.05;
+    filter: grayscale(50%);
 }
 
 /*Media rule is used to ensure accurate display on different types of devices*/
