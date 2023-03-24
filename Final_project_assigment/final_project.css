@@ -46,7 +46,7 @@ p{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: justify;
     letter-spacing: 0.1vw;
-    font-size: 2.5vw;
+    font-size: 1.5vw;
     padding-left: 1vw;
     padding-right: 1vw;
 }
@@ -321,9 +321,8 @@ footer{
 .Column_1{
     float: left;
     width: 50%;
-    padding: 10px;
-    padding-top: 3%;
-    height: 400px;
+    padding: 1.6%;
+    height: 450px;
     background-color: #A0B57D;
 }
 
@@ -336,15 +335,14 @@ footer{
 .Column_2{
     float: left;
     width: 50%;
-    padding: 10px;
-    padding-top: 1.9%;
-    height: 400px;
+    padding: 1.6%;
+    height: 450px;
     background-color: darkolivegreen;
 }
 
 .Column_tall{
     padding-top: 3.5%;
-    height: 450px;
+    height: 500px;
 }
 
 .row:after{
