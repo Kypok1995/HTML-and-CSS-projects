@@ -34,9 +34,9 @@ function showSlides(n){
     dots[slideIndex-1].className +=" active"; //active styling for the dot associated with image
 }
 
-document.addEventListener('click', function(event){ //add event listener for every click on site
-    if(event.target.matches(" cancel") ||  
-    !event.target.closest(".form-popup") && !event.target.closest("Pop_up_button") && !event.target.closest(".contact")){ 
+document.addEventListener("click", function(event){ //add event listener for every click on site
+    if(event.target.matches(".cancel") ||  
+    !event.target.closest(".form-popup") && !event.target.closest(".Pop_up_button") && !event.target.closest(".contact")){ 
         closeForm(); //if user clicks on some of this buttons, form closed
     }
 }, false);// in any other situations nothing happenned
