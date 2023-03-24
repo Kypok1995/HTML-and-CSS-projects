@@ -95,6 +95,7 @@ img{
 
 img:hover{
     filter: brightness(100%);
+    scale: 1.05;
 }
 
 /*Media rule is used to ensure accurate display on different types of devices*/
